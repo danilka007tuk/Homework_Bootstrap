@@ -10,9 +10,9 @@
   </head>
    <div class="d-flex justify-content-center ">
   <div class="px-3">
-    <h3>Главная</h3>
+    <h3>Контакты</h3>
        <div class="d-flex justify-content-center margin: 50px ">
-      <h5>Вы находитесь на странице для покупки товаров</h5>
+      <h5></h5>
   </div>
   </div>
    </div>
@@ -46,68 +46,58 @@
          <button type="button" class="btn btn-dark position-relative">
   Пользователь
   <span class="position-absolute top-3 start-100 translate-middle border-light rounded-circle">
-    <span class="visually-hidden ">New alerts</span>
+    <span class="visually-hidden">New alerts</span>
   </span>
 </button>
         </div>
       </div>
     </div>
   </div>
-<!--  Начало схемы карточек-->
-  <div class="container">
-  <div class="row g-3">
-    <!-- Карточка 1 -->
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="card h-100">
-        <div class="card-header">
-          Товар 1
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">100$</h5>
-          <p class="card-text">Распродажа только сегодня скидка 15% на всё</p>
-          <a href="" class="btn btn-dark">Купить</a>
-        </div>
+   <div class="container d-flex justify-content-center align-items-start mt-5">
+  <!-- Форма (остаётся практически без изменений) -->
+  <form class="border p-4 rounded-3" style="max-width: 500px; margin-right: 40px;">
+    <div class="row">
+      <!-- Поле Email -->
+      <div class="mb-3 col-12 col-md-6">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">Введите пожалуйста свою почту.</div>
+      </div>
+
+      <!-- Поле Имя -->
+      <div class="mb-3 col-12 col-md-6">
+        <label for="name" class="form-label">Имя</label>
+        <input type="text" class="form-control" id="name">
+        <div id="nameHelp" class="form-text">Введите пожалуйста своё имя.</div>
+      </div>
+
+      <!-- Поле Пароль -->
+      <div class="mb-3 col-12">
+        <label for="exampleInputPassword1" class="form-label">Пароль</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+         <div id="passwordHelp" class="form-text">Введите пожалуйста свой Пароль.</div>
+      </div>
+
+      <!-- Чекбокс -->
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Подтвердить</label>
+      </div>
+
+      <!-- Кнопка отправки -->
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary">Отправить</button>
       </div>
     </div>
-    <!-- Карточка 2 -->
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="card h-100">
-        <div class="card-header">
-           Товар 2
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">100$</h5>
-          <p class="card-text">Распродажа только сегодня скидка 15% на всё</p>
-          <a href="#" class="btn btn-dark">Купить</a>
-        </div>
-      </div>
-    </div>
-    <!-- Дополнительные карточки -->
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="card h-100">
-        <div class="card-header">
-           Товар 3
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">100$</h5>
-          <p class="card-text">Распродажа только сегодня скидка 15% на всё</p>
-          <a href="#" class="btn btn-dark">Купить</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="card h-100">
-        <div class="card-header">
-           Товар 4
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">100$</h5>
-          <p class="card-text">Распродажа только сегодня скидка 15% на всё</p>
-          <a href="#" class="btn btn-dark">Купить</a>
-        </div>
-      </div>
-    </div>
+  </form>
+
+  <!-- Текст справа от формы -->
+  <div style="max-width: 300px;">
+    <h3>Связь с нами</h3>
+    <p>Здесь вы можете разместить любой текст</p>
+    <p>Вы можете отформатировать этот текст по своему усмотрению.</p>
+      <p>Свяжитесь с нами в любое время.</p>
   </div>
 </div>
-  </body>
+</body>
 </html>

@@ -1,1 +1,97 @@
-<!--СОЗДАНИЕ ТЕЛА-->
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+   <div class="d-flex justify-content-center">
+  <div class="px-3">
+    <h3>Каталог</h3>
+       <div class="d-flex justify-content-center margin: 50px ">
+      <h5>Вы находитесь на странице для выбора товаров</h5>
+  </div>
+  </div>
+   </div>
+ <body class="p-3 m-0 border-0 bd-example">
+  <div data-bs-theme="dark">
+    <!-- Кнопка в левом верхнем углу -->
+    <div class="position-fixed top-0 start-0 p-3"> <!-- Фиксированное позиционирование -->
+      <button
+        class="btn btn-dark"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions"
+      >Открыть панель</button>
+    </div>
+    <!-- Остальной код (offcanvas) -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Меню</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p></p>
+        <div class="col-md-10 sidebar">
+          <ul class="navbar-nav flex-column">
+             <li class="nav-item"><a class="nav-link text-white btn btn-dark position-relative" type="button" href="home2.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link text-white btn btn-dark position-relative" type="button" href="home.html">Каталог</a></li>
+            <li class="nav-item"><a class="nav-link text-white btn btn-dark position-relative" type="button" href="home4.html">Заказы</a></li>
+            <li class="nav-item"><a class="nav-link text-white btn btn-dark position-relative" type="button" href="home3.html">Контакты</a></li>
+          </ul>
+         <button type="button" class="btn btn-dark position-relative">
+  Пользователь
+  <span class="position-absolute top-3 start-100 translate-middle border-light rounded-circle">
+    <span class="visually-hidden">New alerts</span>
+  </span>
+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!--  Начало схемы карточек-->
+  <div class="container">
+  <div class="row g-0 bg-body-secondary position-relative">
+    <!-- Карточка 1 -->
+    <div class="col-md-6 mb-md-0 p-md-4">
+    <img src="https://avatars.mds.yandex.net/get-altay/4336337/2a00000179b4aaaa1d0f5f2e688db87c1481/XXL_height" class="w-50 justify-content-center" alt="">
+  </div>
+  <div class="col-md-6 p-4 ps-md-0">
+    <h5 class="mt-0">Товар 1</h5>
+    <p>Хорошая мужская обувь</p>
+    <a href="" class="stretched-link">Посмотреть</a>
+  </div>
+    <!-- Карточка 2 -->
+   <div class="col-md-6 mb-md-0 p-md-4">
+    <img src="https://static.tildacdn.com/tild6466-6636-4462-a262-613533646635/1.jpg" class="w-50 justify-content-center" alt="...">
+  </div>
+  <div class="col-md-6 p-4 ps-md-0">
+    <h5 class="mt-0">Товар 2</h5>
+    <p>Хорошая мужская обувь</p>
+    <a href="#" class="stretched-link">Посмотреть</a>
+  </div>
+    <!-- Дополнительные карточки -->
+    <div class="col-md-6 mb-md-0 p-md-4">
+    <img src="https://avatars.dzeninfra.ru/get-zen_brief/6528542/pub_62af1876bf610a1ccfbdd672_62d444acbf610a1ccfc57393/scale_1200" class="w-50 justify-content-center" alt="...">
+  </div>
+  <div class="col-md-6 p-4 ps-md-0">
+    <h5 class="mt-0">Товар 3</h5>
+    <p>Хорошая мужская обувь</p>
+    <a href="#" class="stretched-link">Посмотреть</a>
+  </div>
+    <div class="col-md-6 mb-md-0 p-md-4">
+    <img src="https://i.pinimg.com/originals/bc/5c/72/bc5c721e24af921444175e16611fc754.png" class="w-50" alt="...">
+  </div>
+  <div class="col-md-6 p-4 ps-md-0">
+    <h5 class="mt-0">Товар 4</h5>
+    <p>Хорошая мужская обувь</p>
+    <a href="#" class="stretched-link">Посмотреть</a>
+  </div>
+</div>
+  </div>
+  </body>
+</html>
